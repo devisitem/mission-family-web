@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+@media (min-width: 992px){
+
+  .app-content-area{
+    min-height: 768px;
+  }
+}
+html {
+  font-family: "AppleSDGothicNeoB",
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,Oxygen-Sans,Ubuntu,Cantarell,
+  "Helvetica Neue",sans-serif;
+}
+@font-face {
+  font-family: "AppleSDGothicNeoB";         
+  src: url("./font/AppleSDGothicNeoB.ttf"); 
+}
