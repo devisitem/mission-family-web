@@ -13,6 +13,8 @@
     margin: 5% 0;
 }
 
+  
+
 .form-area {
     padding:20px 15%;
     border-radius: 20px;
@@ -21,4 +23,9 @@
 }
 .button-submit{
     padding: 20px 0;
+}
+
+.recognize-info{
+    padding: 10px;
+    font-size: medium;
 }
