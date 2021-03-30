@@ -7,10 +7,6 @@
   pointer-events: none;
 }
 
-.recognize-info{
-  padding: 10px;
-  font-size: medium;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
