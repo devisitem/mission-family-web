@@ -1,10 +1,10 @@
 import React from 'react'
 import MFHeader from './components/fix/MFHeader'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import MFFooter from './components/fix/MFFooter'
+import { BrowserRouter as Router} from 'react-router-dom'
 import './App.css'
 import 'materialize-css'
 import MFRouter from './components/MFRouter'
-
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
                   <div className="app-content-area">
                     <MFRouter />
                   </div>
-           </Router>
+          <MFFooter />
+        </Router>
       </div>
   );
 }

@@ -1,7 +1,7 @@
 
 
 .main-container{
-    margin: 0  20%;
+    margin: 20px  20%;
 }
 
 .nav-wrapper{
@@ -28,4 +28,34 @@
 .recognize-info{
     padding: 10px;
     font-size: medium;
+}
+.page-footer{
+    background-color: #4b4b4b;
+}
+
+.create-mission{
+    padding: 30px 25%;
+}
+.add-mission-button, .add-mission-button:focus {
+    background-color: #5a3ca5;
+}
+.add-mission-button:hover{
+    background-color: #a595d1;
+}
+
+.detail-form{
+    background-color: red;
+    height: 0px;
+    width: 100%;
+}
+.collapsible-header{
+    outline: none;
+}
+.create-button-area{
+    margin: 50px auto;
+}
+
+.user-list{
+    margin: 50px 0;
+    padding: 0 20%;
 }

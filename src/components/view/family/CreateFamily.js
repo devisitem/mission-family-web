@@ -1,19 +1,18 @@
 import React from 'react'
-import { TextInput,Checkbox,Button } from 'react-materialize'
 import FadeIn from 'react-fade-in'
-
-const FindAccountPage = (props) => {
+import { TextInput,Checkbox,Button } from 'react-materialize'
+const CreateFamily = (props) => {
     return(
         <FadeIn>
-            <div>
-                <h2>계정찾기</h2>
+            <div className="main-container">
+                <h2>패밀리 생성</h2>
                 <form method="post">
                     <div className="login-container">
                         <div className="form-area">
-                            <TextInput id="form-user-phone" label="전화번호" />
+                            <TextInput id="form-family-name" label="패밀리 이름"  />
                             <div className="button-submit">
                                 <Button  large node="a" style={{ marginRight: '5px',backgroundColor: "#5a3ca5"}} waves="light"  >
-                                    계정 찾기
+                                    패밀리 생성 !
                                 </Button>
                             </div>
                         </div>    
@@ -24,4 +23,4 @@ const FindAccountPage = (props) => {
     )
 }
 
-export default FindAccountPage
+export default CreateFamily

@@ -1,15 +1,18 @@
 import React from 'react'
 import { Navbar,Icon,NavItem } from 'react-materialize'
 import MFSideNav from './MFSideNav'
-
+import { AnimateGroup,Animate,Component } from 'react-simple-animate'
+import {useAnimateGroup} from 'react-simple-animate'
 const MFHeader = (props) => {
-
+  
 
   return (
     <div>
       <Navbar
         alignLinks="left"
-        brand={<a className="brand-logo" href="/">Mission Family</a>}
+        brand={<a className="brand-logo" href="/">
+          Mission Family
+          </a>}
         centerLogo
         id="mobile-nav"
         menuIcon={<Icon>menu</Icon>}
