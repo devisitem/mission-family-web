@@ -53,14 +53,9 @@ const MainPage = (props) => {
                             </td>
                         </tr>
                         <tr>
-                            <td rowSpan="4">
+                            <td rowSpan="3">
                                 관리자
                             </td>
-                            <td>
-                                <Link to="/" >유저찾기</Link>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>
                                 <Link to="/" >전체 패밀리찾기</Link>
                             </td>
