@@ -1,6 +1,6 @@
 import React from 'react'
 import FadeIn from 'react-fade-in'
-import { Row,Col,Collection,CollectionItem,Icon,Navbar,NavItem } from 'react-materialize'
+import { Collection,CollectionItem,Icon,Navbar } from 'react-materialize'
 
 const FindUser = (props) => {
     return (
@@ -8,30 +8,23 @@ const FindUser = (props) => {
             <div className="main-container">
                 <h2>유저 찾기</h2>
                 <Navbar
-  alignLinks="right"
-  brand={<a className="brand-logo" href="#">Logo</a>}
-  id="mobile-nav"
-  menuIcon={<Icon>menu</Icon>}
-  options={{
-    draggable: true,
-    edge: 'left',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    outDuration: 200,
-    preventScrolling: true
-  }}
-  search
->
-  <NavItem href="">
-    Getting started
-  </NavItem>
-  <NavItem href="components.html">
-    Components
-  </NavItem>
-</Navbar>
+                alignLinks="right"
+                id="mobile-nav"
+                menuIcon={<Icon>menu</Icon>}
+                options={{
+                    draggable: true,
+                    edge: 'left',
+                    inDuration: 250,
+                    onCloseEnd: null,
+                    onCloseStart: null,
+                    onOpenEnd: null,
+                    onOpenStart: null,
+                    outDuration: 200,
+                    preventScrolling: true
+                }}
+                search
+                >
+                </Navbar>
                 <div className="user-list" >
                     <Collection>
                         <CollectionItem className="avatar">
@@ -44,11 +37,11 @@ const FindUser = (props) => {
                             <br />
                                 Second Line
                             </p>
-                            <a className="secondary-content" href="javascript:void(0)" >
+                            {/* <a className="secondary-content" href="javascript:void(0)" >
                                 <Icon>
                                     grade
                                 </Icon>
-                            </a>
+                            </a> */}
                         </CollectionItem>
                         <CollectionItem className="avatar">
                             <Icon className="circle">
@@ -62,11 +55,11 @@ const FindUser = (props) => {
                             <br />
                                 Second Line
                             </p>
-                            <a className="secondary-content" href="javascript:void(0)" >
+                            {/* <a className="secondary-content" href="javascript:void(0)" >
                                 <Icon>
                                     grade
                                 </Icon>
-                            </a>
+                            </a> */}
                         </CollectionItem>
                         <CollectionItem className="avatar">
                             <Icon className="circle green">
@@ -80,11 +73,11 @@ const FindUser = (props) => {
                             <br />
                                 Second Line
                             </p>
-                            <a className="secondary-content" href="javascript:void(0)" >
+                            {/* <a className="secondary-content" href="javascript:void(0)" >
                                 <Icon>
                                     grade
                                 </Icon>
-                            </a>
+                            </a> */}
                         </CollectionItem>
                         <CollectionItem className="avatar">
                             <Icon className="circle red">
@@ -98,11 +91,11 @@ const FindUser = (props) => {
                             <br />
                                 Second Line
                             </p>
-                            <a className="secondary-content" href="javascript:void(0)" >
+                            {/* <a className="secondary-content" href="javascript:void(0)" >
                                 <Icon>
                                     grade
                                 </Icon>
-                            </a>
+                            </a> */}
                         </CollectionItem>
                     </Collection>
                 </div>

@@ -9,8 +9,8 @@ const CreateMission = (props) => {
     
     const dateformat = require('dateformat')
     const [Title,setTitle] = useState("간편미션")
-    const [startDate,setStartDate] = useState("")
-    const [endDate,setEndDate] = useState("")
+    // const [startDate,setStartDate] = useState("")
+    // const [endDate,setEndDate] = useState("")
 
 
     const [ DetailMent ,setDetailMent ] =useState("상세미션 작성하기")

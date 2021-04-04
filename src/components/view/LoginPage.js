@@ -1,7 +1,6 @@
 import React,{ useState } from 'react'
 import { TextInput,Checkbox,Button } from 'react-materialize'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
 
 import FadeIn from 'react-fade-in'
 const LoginPage = (props) => {
@@ -14,6 +13,7 @@ const LoginPage = (props) => {
             id: Id,
             passowrd: Password
         }
+        console.log(user)
 
     }
 
