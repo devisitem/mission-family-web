@@ -7,7 +7,7 @@ const api = axios.create({
 })
 
 export function dupCheckUser(data){
-    const request = api.post('/dupCheck',data)
+    const request = api.post('/dupCheck',data,{ timeout: 1000})
         .then(response =>
             response.data
         )
