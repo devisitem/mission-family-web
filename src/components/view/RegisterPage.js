@@ -4,7 +4,7 @@ import { TextInput,Checkbox,Button } from 'react-materialize'
 import { Link } from 'react-router-dom'
 import FadeIn from 'react-fade-in'
 import $ from 'jquery'
-import { dupCheckUser } from '../../_action/user_action'
+import { dupCheckUser, registerUser } from '../../_action/user_action'
 import { isElementOfType } from 'react-dom/cjs/react-dom-test-utils.development'
 const RegisterPage = (props) => {
 
@@ -142,11 +142,27 @@ const RegisterPage = (props) => {
 
         let user = {
             userId: Id,
-            userPassowrd: Password,
+            userPassword: Password,
             userName: UserName
         }
 
-        console.log("user = ",user)
+        dispatch(registerUser(user))
+            .then(response => {
+                switch(response.payload.serviceCode){
+                    case "create_success": {
+                        props.history.push("/")
+                        break
+                    }
+                    case "create_fail": {
+                        alert("가입에 실패 하였습니다. - 이미 사용중인 아이디입니다.")
+                        $("#form-user-id").addEventListener("focusin", e => {
+                            e.target.value = ""
+                        })
+                        break
+                    }
+                    
+                }
+            })
         
     }
 

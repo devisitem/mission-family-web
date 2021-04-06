@@ -1,19 +1,28 @@
 import React,{ useState } from 'react'
 import { TextInput,Checkbox,Button } from 'react-materialize'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { loginUser } from '../../_action/user_action'
 
 import FadeIn from 'react-fade-in'
 const LoginPage = (props) => {
-
+    const dispatch = useDispatch()
     const [Id , setId] = useState("")
     const [Password, setPassword] = useState("")
 
     const SubmitHandler = (e) => {
         let user = {
             id: Id,
-            passowrd: Password
+            password: Password
         }
-        console.log(user)
+        dispatch(loginUser(user))
+            .then(res => {
+
+
+                if(res.payload === 'ok'){
+                    props.history.push('/') 
+                }
+            })
 
     }
 

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { LOGIN_USER, DUPCHECK_USER } from './types'
+import { LOGIN_USER, DUPCHECK_USER,REGISTER_USER } from './types'
 
 const api = axios.create({
     baseURL: 'http://localhost:8364/api/users',
@@ -24,6 +24,17 @@ export function loginUser(data){
         )
     return {
         type: LOGIN_USER,
+        payload: request
+    }
+}
+
+export function registerUser(data){
+    const request = api.post('/regist',data)
+        .then(response => 
+            response.data
+            )
+    return {
+        type: REGISTER_USER,
         payload: request
     }
 }
