@@ -20,7 +20,10 @@ const LoginPage = (props) => {
 
 
                 if(res.payload === 'ok'){
+                    console.log('login success')
                     props.history.push('/') 
+                } else {
+                    alert('등록된 정보가 존재하지 않습니다.')
                 }
             })
 
