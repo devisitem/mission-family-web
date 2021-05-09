@@ -22,6 +22,9 @@ const CreateMission = (props) => {
     const [ MissionPackMent ,setMissionPackMent ] =useState('미션팩 생성하기')
 
     const FormHandler = (e) => {
+        const title;
+        const startDate;
+        const endDate;
 
         switch(Selected){
             case BASIC: {
@@ -34,8 +37,8 @@ const CreateMission = (props) => {
                 break
             }
             case DETAIL: {
+                title = $('#detailContent').val()
                 
-
 
                 break
             }
@@ -45,6 +48,16 @@ const CreateMission = (props) => {
 
                 break
             }
+        }
+
+
+        let missionBody = {
+
+            missionTitle: title,
+            missionStartDate: startDate,
+            missionEndDate: endDate,
+            missionType: Selected
+
         }
     }
 
