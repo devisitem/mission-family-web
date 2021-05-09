@@ -115,9 +115,8 @@ const CreateMission = (props) => {
                             onClick={ detailHandler }
                             icon={<Icon>create</Icon>}
                             node='div' >
-                            <TextInput id='ds' label='미션내용'  />
-                            <MFDatePicker pickerId='startDate' labelName='시작날짜' handleOnPicked={ startPickerHandler } />
-                            <MFDatePicker pickerId='endDate' labelName='종료날짜' handleOnPicked={ endPickerHandler } />
+                            <TextInput id='detailContent' label='상세 미션내용'  />
+                            <MFDatePicker pickerId='detailEndDate' labelName='종료날짜' handleOnPicked={ endPickerHandler } />
                         </CollapsibleItem>
                         <CollapsibleItem
                             expanded={false}
