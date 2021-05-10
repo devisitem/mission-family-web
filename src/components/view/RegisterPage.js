@@ -160,7 +160,8 @@ const RegisterPage = (props) => {
                         })
                         break
                     }
-                    
+                    default:
+                        break
                 }
             })
         

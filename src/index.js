@@ -7,6 +7,7 @@ import './css/main.css'
 import { applyMiddleware, createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import rootReducer from './_reducers/index'
+
 import { Provider } from 'react-redux'
 
 import promiseMiddleware from 'redux-promise';

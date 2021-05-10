@@ -21,7 +21,7 @@ const MFDatePicker = ({ handleOnPicked,pickerId,labelName }) => {
             onSelect: null,
             parse: null,
             setDefaultDate: false,
-            showClearBtn: false,
+            showClearBtn: true,
             showDaysInNextAndPreviousMonths: false,
             showMonthAfterYear: false,
             yearRange: 0
